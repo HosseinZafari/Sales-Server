@@ -2,10 +2,7 @@
 require_once '../core/loader.php';
 
 class UserModel {
-    
-     function a($phoneNumber){
-     
-    }
+
     public static function signUp($name , $family , $phoneNumber , $password): array{
         global $connection;
         $res = $connection->query("select name from tb_user where phoneNumber='$phoneNumber'");

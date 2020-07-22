@@ -1,9 +1,8 @@
 <?php 
-require_once 'core/loader.php';
+header('Content-Type:application/json');
 
-setJsonOutPut();
 echo json_encode([
     'code' => 300 , 
     'status' => 'failed' , 
-    'msg' => 'Enter Valid URL   '
+    'msg' => 'Enter Valid URL'
 ]);
