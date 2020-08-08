@@ -16,11 +16,12 @@ function setEncryptPass($pass){
   ]);
 }
 
-function responseStd($code , $msg , $desc = 'No Description'){
+function responseStd($code , $msg , $desc = 'No Description' , $user = null){
     return [
       'code' => $code,
       'msg' => $msg , 
-      'desc' => $desc 
+      'desc' => $desc , 
+      'user' => $user
     ];
 }
 
